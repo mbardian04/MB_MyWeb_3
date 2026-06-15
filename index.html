@@ -1,156 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title> <!--nazwa/tytuł strony-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png"> <!--favicon - ikona strony internetowej, widoczna na pasku adresu przeglądarki i na kracie otwartej strony www.-->
-    <!--unikalny kod osadzania zestawu--> <script src="http://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script> <!--link do fontawesome: https://fontawesome.com/ -->
+    <title>SmartWardrobe - Twoja Wirtualna Szafa</title> <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png"> 
+    <script src="http://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script> 
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo_zit.png" class="logo"><!--miejsce na autorskie logo-->
-            <ul id="sidemenu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!--ikonę pobrać z https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+            <img src="images/logo_wardrobe.png" class="logo" alt="SmartWardrobe Logo"><ul id="sidemenu">
+                <li><a href="#about">O aplikacji</a></li>
+                <li><a href="#services">Funkcje</a></li>
+                <li><a href="#portfolio">Jak to działa</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             <div class="toggle-btn" id="btn">
                 <span id="btnText">Light</span>
                 <img src="images/sun.png" id="btnIcon">
             </div>
         </nav>
         <div class="header-text">
-            <h1 class="slide-left">Witam <span>Mikołaj</span> Bardian.</h1> <!--miejsce na przedstawienie swojej osoby-->
-            <p class="slide-left">np. Chciałbym zaprezentować moje portfolio.</p> <!--krótki opis czego dotyczy strona-->
+            <h1 class="slide-left">Twoja szafa w <span>smartfonie</span>.</h1> 
+            <p class="slide-left">Zrób zdjęcie, dodaj ubranie i twórz idealne outfity dopasowane do pogody i Twojego stylu.</p> 
         </div>
     </div>
 </div>
-<!--ABOUT-->
+
 <div id="about">
     <div class="container">
         <div class="row">   
             <div class="about-col-1">
-                <img src="biznes_ziutek.jpg"><!--miejsce na zdjęcie biznesowe-->
-            </div>
+                <img src="images/app_mockup.jpg" alt="Aplikacja SmartWardrobe"></div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><!--klika słów o sobie-->
+                <h1 class="sub-title">O SmartWardrobe</h1>
+                <p>Nigdy więcej porannego stania przed szafą z myślą „nie mam się w co ubrać”. Nasza aplikacja wykorzystuje sztuczną inteligencję, aby pomóc Ci zarządzać Twoją garderobą i codziennie wyglądać świetnie.</p>
+                    
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Dlaczego warto?</p>
+                        <p class="tab-links" onclick="opentab('experience')">Technologia</p>
+                        <p class="tab-links" onclick="opentab('education')">Wersje</p>
                     </div>
+
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>np. Analiza biznesowa</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<!--opis umiejętności-->
-                            </li>
-                            <li><span>np. Rachunkowość</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li><!--opis umiejętności-->
-                            <li><span>np. Programowanie</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li><!--opis umiejętności-->
+                            <li><span>Oszczędność czasu</span><br>Aplikacja sama zaproponuje zestaw ubrań na dany dzień w kilka sekund.</li>
+                            <li><span>Świadoma moda</span><br>Wykorzystaj w 100% ubrania, które już masz w swojej szafie.</li>
+                            <li><span>Zero nietrafionych zakupów</span><br>Zanim kupisz coś nowego, sprawdź w aplikacji, czy pasuje do Twoich ubrań.</li>
                         </ul>
                     </div>
+
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2017 - Current</span><br>zawód</li><!--doświadczenie zawodowe-->
-                            <li><span>2011 - 2017</span><br>zawód</li><!--doświadczenie zawodowe-->
-                            <li><span>2011 - 2011</span><br>zawód</li><!--doświadczenie zawodowe-->
+                            <li><span>AI Style Creator</span><br>Algorytm uczy się Twojego gustu i proponuje spójne estetycznie outfity.</li>
+                            <li><span>Live Weather Sync</span><br>Automatyczne pobieranie prognozy pogody dla Twojej lokalizacji.</li>
+                            <li><span>Smart Tagging</span><br>Automatyczne rozpoznawanie typów ubrań i kolorów ze zdjęcia.</li>
                         </ul>
                     </div>
+
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2027</span><br>Uniwersytet Ekonomiczny we Wrocławiu</li><!--edukacja i ukończone kursy-->
-                            <li><span>2025</span><br>Uniwersytet Ekonomiczny we Wrocławiu</li><!--edukacja i ukończone kursy-->
-                            <li><span>2011</span><br>Liceum/Technikum</li><!--edukacja i ukończone kursy-->
+                            <li><span>Wersja Basic (Darmowa)</span><br>Zapis do 100 ubrań, podstawowe filtry stylu i pogody.</li>
+                            <li><span>Wersja Premium</span><br>Nielimitowana szafa, zaawansowane sugestie AI, planowanie outfitów w kalendarzu.</li>
+                            <li><span>Dostępność</span><br>Aplikacja dostępna na systemy iOS oraz Android.</li>
                         </ul>
                     </div>
             </div> 
         </div>
     </div>
 </div>
-<!--services-->
+
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">Co potrafi aplikacja?</h1>
         <div class="services-list">
             <div>
-                <i class="fa-sharp fa-solid fa-gears"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
-                <h2>np. Analityk biznesowy</h2><!--stanowisko-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><!--opis posiadanych umiejętności-->
+                <i class="fa-solid fa-camera"></i>
+                <h2>Szybkie dodawanie</h2>
+                <p>Zrób zdjęcie ubrania, a aplikacja automatycznie usunie tło i skataloguje je w Twojej cyfrowej szafie.</p>
             </div>
             <div>
-                <i class="fa-solid fa-code"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
-                <h2>np. Księgowy</h2><!--stanowisko-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><!--opis posiadanych umiejętności-->
+                <i class="fa-solid fa-cloud-sun"></i>
+                <h2>Dobór do pogody</h2>
+                <p>System sprawdza temperaturę oraz opady za oknem i proponuje ubiór na cebulkę lub letni look – tak, aby nie zaskoczył Cię żaden deszcz.</p>
             </div>
             <div>
-                <i class="fa-solid fa-database"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
-                <h2>np. Informatyk</h2><!--stanowisko-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><!--opis posiadanych umiejętności-->
+                <i class="fa-solid fa-sliders"></i>
+                <h2>Zaawansowane filtry</h2>
+                <p>Szukasz czegoś na elegancką kolację, czy luźne wyjście ze znajomymi? Filtruj garderobę według stylu, okazji, kolorów lub pór roku.</p>
             </div>
         </div>
     </div>
 </div>
-<!--portfolio-->
+
 <div id="portfolio">
     <div class ="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Zobacz, jakie to proste</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/ring-binder-used-stored-documents.jpg"><!--zdjęcie związane z zainteresowaniami-->
+                <img src="images/step1_photo.jpg" alt="Robienie zdjęcia ubrania">
                 <div class="layer">
-                    <h3>np. Power BI</h3> <!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
-                    <a href="https://drive.google...." target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>1. Zrób zdjęcie</h3>
+                    <p>Sfotografuj t-shirt, spodnie lub buty na płaskiej powierzchni.</p>
                 </div>
             </div>
             <div class="work">
-                <img src="excel_zdj.jpg"><!--zdjęcie związane z zainteresowaniami-->
+                <img src="images/step2_save.jpg" alt="Zapisywanie w aplikacji">
                 <div class="layer">
-                    <h3>kurs EXCEL</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
-                    <a href="https://drive.google..." target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>2. Zapisz w szafie</h3>
+                    <p>Aplikacja doda tagi (kolor, fason) i umieści rzecz w odpowiedniej kategorii.</p>
                 </div>
             </div>
             <div class="work">
-                <img src="python.jpg"><!--zdjęcie związane z zainteresowaniami-->
+                <img src="images/step3_match.jpg" alt="Generowanie outfitu">
                 <div class="layer">
-                    <h3>np. Python/C++/C#</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
-                    <a href="https:..." target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>3. Miksuj i filtruj</h3>
+                    <p>Generuj gotowe outfity na bazie pogody i filtruj je wedle uznania.</p>
                 </div>
             </div>
         </div>
-       <!--<a href="#" class="btn">BACK</a>-->
     </div>
 </div>
-<!--contact-->
+
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"><!--ikonę pobrać z https://fontawesome.com/icons/categories--></i><a href="mailto:jan.kowalski.ue.wroc.pl" target="_blank">jan.kowalski.ue.wroc.pl</a></p><!--adres e-mail-->
-                <p><i class="fa-sharp fa-solid fa-square-phone"><!--ikonę pobrać z https://fontawesome.com/icons/categories--></i>+48 000 000 000</p><!--numer telefonu-->
-                <p><i class="fa-brands fa-linkedin"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories--><a href="https://www.linkedin.com" target="_blank">linkedin.com</a></p><!--link do linkedin-->
-                <a href="images/CV" download class="btn btn2">Download CV</a>
+                <h1 class="sub-title">Skontaktuj się z nami</h1>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:kontakt@smartwardrobe.com" target="_blank">kontakt@smartwardrobe.com</a></p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>+48 123 456 789</p>
+                <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com" target="_blank">linkedin.com/company/smartwardrobe</a></p>
+                <a href="#" class="btn btn2">Pobierz Media Kit</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <input type="text" name="Name" placeholder="Twoje imię / Nazwa firmy" required>
+                    <input type="email" name="Email" placeholder="Twój e-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Napisz do nas (np. w sprawie partnerstwa lub wsparcia technicznego)"></textarea>
+                    <button type="submit" class="btn btn2">Wyślij wiadomość</button>
                 </form>
                 <span id="msg"></span> 
 
@@ -158,10 +150,10 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright by...</p>
+        <p>Copyright &copy; SmartWardrobe. Wszelkie prawa zastrzeżone.</p>
     </div>
 </div>
-<!--skrypt dotyczący ABOUT-->
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -176,9 +168,8 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-
 </script>
-<!--skrypt dla urządzeń mobilnych-->
+
 <script>
     var sidemenu = document.getElementById("sidemenu");
 
@@ -189,9 +180,8 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
-
 </script>
-<!--link do Google Add Script: https://www.google.com/script/start/-->
+
 <script>
     const scriptURL = 'https:...'
     const form = document.forms['submit-to-google-sheet']
@@ -201,22 +191,20 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
+            msg.innerHTML = "Wiadomość została wysłana!"
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
             form.reset()
         })
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => console.error('Błąd!', error.message))
     })
 </script>
-<!--skrypt do zmany koloru strony-->
-<script> 
 
+<script> 
     let btn = document.getElementById("btn");
     let btnText = document.getElementById("btnText");
     let btnIcon = document.getElementById("btnIcon");
-    
     
     btn.onclick = function(){
         document.body.classList.toggle("light-theme");
@@ -229,8 +217,7 @@
             btnText.innerHTML = "Light";
         }
     }
-    
-    </script>
+</script>
 
 </body>
 </html>
